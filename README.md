@@ -11,6 +11,5 @@ In the project directory, you can run:
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-### Deployed Link 
+### [Deployed Link](https://hyperreality-assignment-l8qfa7gbm-akshaykumarg26.vercel.app/)
 
-(https://hyperreality-assignment-l8qfa7gbm-akshaykumarg26.vercel.app/)
