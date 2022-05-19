@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useState } from "react";
 import { FaStar } from "react-icons/fa";
+// import "./Style.css"
 
 export const Ratings = ({ question }) => {
   const colors = {
@@ -40,7 +41,7 @@ const handleStorage = () => {
 
   return (
     <>
-      <div className="container">
+      <div>
         <div className="stars">
           {stars.map((_, index) => {
             return (
@@ -65,7 +66,7 @@ const handleStorage = () => {
         </div>
       </div>
       <br />
-      <button onClick={handleStorage}>Submit</button>
+      <button className="submitBtn" onClick={handleStorage}>Submit</button>
     </>
   );
 };

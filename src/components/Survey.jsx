@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Ratings } from "./Ratings";
+import "./Style.css";
 
 export const Survey = () => {
   const questions = [
@@ -14,25 +15,34 @@ export const Survey = () => {
 
   return (
     <>
-      <div>
-        <h4>
-          {index + 1}/{questions.length}
-        </h4>
-      </div>
-      <b>{questions[index]}</b>
-      <Ratings question={questions[index]} />
-      <br />
-      <br />
+      <div className="container">
+        <div className="child">
+          <div className="rate">
+            <h4>
+              {index + 1}/{questions.length}
+            </h4>
+          </div>
+          <b className="questions">{questions[index]}</b>
+          <Ratings question={questions[index]} />
+          <br />
+          <br />
 
-      <button disabled={index === 0} onClick={() => setIndex(index - 1)}>
-        Pre
-      </button>
-      <button
-        disabled={index === questions.length}
-        onClick={() => setIndex(index + 1)}
-      >
-        Next
-      </button>
+          <button
+            className="btn"
+            disabled={index === 0}
+            onClick={() => setIndex(index - 1)}
+          >
+            Pre
+          </button>
+          <button
+            className="btn"
+            disabled={index === questions.length}
+            onClick={() => setIndex(index + 1)}
+          >
+            Next
+          </button>
+        </div>
+      </div>
     </>
   );
 };
